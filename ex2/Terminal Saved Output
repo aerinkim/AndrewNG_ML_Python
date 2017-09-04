@@ -1,0 +1,856 @@
+Last login: Mon Jul 17 23:08:06 on ttys000
+aerin@Aerins-MacBook-Pro:~$ owd
+-bash: owd: command not found
+aerin@Aerins-MacBook-Pro:~$ pwd
+/Users/aerin
+aerin@Aerins-MacBook-Pro:~$ cd Desktop/
+aerin@Aerins-MacBook-Pro:~/Desktop$ cd Coursera-Stanford-ML-Python/
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python$ ls
+Coursera Stanford ML Python wiki.ipynb
+README.md
+Submission.py
+Submission.pyc
+__init__.py
+ex0.csv
+ex1
+ex2
+ex3
+ex4
+ex5
+ex6
+ex7
+ex8
+gui
+show.py
+show.pyc
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python$ cd ex4/
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ ls
+__init__.py                 ex4data1.mat
+checkNNGradients.py         ex4weights.mat
+computeNumericalGradient.py nnCostFunction.py
+debugInitializeWeights.py   randInitializeWeights.py
+ex4.pdf                     sigmoidGradient.py
+ex4.py                      submit.py
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.p
+python: can't open file 'ex4.p': [Errno 2] No such file or directory
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Traceback (most recent call last):
+  File "ex4.py", line 22, in <module>
+    from ex3.displayData import displayData
+ImportError: No module named ex3.displayData
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Traceback (most recent call last):
+  File "ex4.py", line 23, in <module>
+    from predict import predict
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/predict.py", line 3, in <module>
+    from ex2.sigmoid import sigmoid
+ImportError: No module named ex2.sigmoid
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Traceback (most recent call last):
+  File "ex4.py", line 24, in <module>
+    from nnCostFunction import nnCostFunction
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/nnCostFunction.py", line 3, in <module>
+    from ex2.sigmoid import sigmoid
+ImportError: No module named ex2.sigmoid
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Traceback (most recent call last):
+  File "ex4.py", line 24, in <module>
+    from nnCostFunction import nnCostFunction
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/nnCostFunction.py", line 4, in <module>
+    from sigmoidGradient import sigmoidGradient
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/sigmoidGradient.py", line 1, in <module>
+    from ex2.sigmoid import sigmoid
+ImportError: No module named ex2.sigmoid
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Traceback (most recent call last):
+  File "ex4.py", line 24, in <module>
+    from nnCostFunction import nnCostFunction
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/nnCostFunction.py", line 4, in <module>
+    from sigmoidGradient import sigmoidGradient
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/sigmoidGradient.py", line 1, in <module>
+    from ex2.sigmoid import sigmoid
+ImportError: No module named ex2.sigmoid
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Loading and Visualizing Data ...
+Traceback (most recent call last):
+  File "ex4.py", line 52, in <module>
+    displayData(sel)
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/displayData.py", line 27, in displayData
+    pad + display_cols * (example_width + pad)))
+  File "/Library/Python/2.7/site-packages/numpy/core/numeric.py", line 192, in ones
+    a = empty(shape, dtype, order)
+TypeError: 'numpy.float64' object cannot be interpreted as an index
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ sudo pip install -U numpy==1.11.0
+Password:
+The directory '/Users/aerin/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/aerin/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Collecting numpy==1.11.0
+  Downloading numpy-1.11.0-cp27-cp27m-macosx_10_6_intel.macosx_10_9_intel.macosx_10_9_x86_64.macosx_10_10_intel.macosx_10_10_x86_64.whl (3.9MB)
+    100% |████████████████████████████████| 3.9MB 229kB/s 
+Installing collected packages: numpy
+  Found existing installation: numpy 1.13.0
+    Uninstalling numpy-1.13.0:
+      Successfully uninstalled numpy-1.13.0
+Successfully installed numpy-1.11.0
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ sudo pip install -U numpy==1.11.0
+The directory '/Users/aerin/Library/Caches/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+The directory '/Users/aerin/Library/Caches/pip' or its parent directory is not owned by the current user and caching wheels has been disabled. check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+Requirement already up-to-date: numpy==1.11.0 in /Library/Python/2.7/site-packages
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Loading and Visualizing Data ...
+/Library/Python/2.7/site-packages/numpy/core/numeric.py:190: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  a = empty(shape, dtype, order)
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/displayData.py:39: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  display_array[min(rows):max(rows), min(cols):max(cols)] = X[curr_ex, :].reshape(example_height, example_width) / max_val
+
+Program paused. Press Enter to continue...^C^C
+Traceback (most recent call last):
+  File "ex4.py", line 54, in <module>
+    raw_input("Program paused. Press Enter to continue...")
+KeyboardInterrupt
+
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ python ex4.py
+Loading and Visualizing Data ...
+/Library/Python/2.7/site-packages/numpy/core/numeric.py:190: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  a = empty(shape, dtype, order)
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/displayData.py:39: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  display_array[min(rows):max(rows), min(cols):max(cols)] = X[curr_ex, :].reshape(example_height, example_width) / max_val
+Program paused. Press Enter to continue...
+Loading Saved Neural Network Parameters ...
+Feedforward Using Neural Network ...
+Traceback (most recent call last):
+  File "ex4.py", line 90, in <module>
+    num_labels, X, y, Lambda)
+  File "/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4/nnCostFunction.py", line 71, in nnCostFunction
+    grad = np.hstack((Theta1_grad.T.ravel(), Theta2_grad.T.ravel()))
+NameError: global name 'Theta1_grad' is not defined
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../ex2/costFunction.py
+	modified:   ../ex2/costFunctionReg.py
+	modified:   ../ex2/ex2.pdf
+	modified:   ../ex2/ex2.py
+	modified:   ../ex2/ex2_reg.py
+	modified:   ../ex2/gradientFunction.py
+	modified:   ../ex2/gradientFunctionReg.py
+	modified:   ../ex2/predict.py
+	modified:   ../ex2/sigmoid.py
+	modified:   ex4.pdf
+	modified:   ex4.py
+	modified:   nnCostFunction.py
+	modified:   sigmoidGradient.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	displayData.py
+	predict.py
+	sigmoid.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ git add . 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ git commit -m "regular commit"
+[master d48cc56] regular commit
+ Committer: Aerin Kim <aerin@Aerins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 111 insertions(+), 25 deletions(-)
+ create mode 100644 ex4/displayData.py
+ rewrite ex4/ex4.pdf (92%)
+ create mode 100644 ex4/predict.py
+ create mode 100644 ex4/sigmoid.py
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ git push
+Counting objects: 10, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 433.01 KiB | 0 bytes/s, done.
+Total 10 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/yunazzang/Coursera-Stanford-ML-Python.git
+   f1329e3..d48cc56  master -> master
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanfordaerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ ipython
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.4.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 
+
+In [1]: pwd
+Out[1]: u'/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4'
+
+In [2]: cd ..
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python
+
+In [3]: cd ex3
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex3
+
+In [4]: ls
+__init__.py         ex3.py              ex3weights.mat      predict.py
+displayData.py      ex3_nn.py           lrCostFunction.py   predictOneVsAll.py
+ex3.pdf             ex3data1.mat        oneVsAll.py         submit.py
+
+In [5]: 
+
+In [5]: 
+
+In [5]: 
+
+In [5]: 
+
+In [5]: %paste
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+import matplotlib.pyplot as plt
+
+from show import show
+
+def displayData(X):
+    """displays 2D data
+      stored in X in a nice grid. It returns the figure handle h and the
+      displayed array if requested."""
+
+# Compute rows, cols
+    m, n = X.shape
+    example_width = round(np.sqrt(n))
+    example_height = (n / example_width)
+
+# Compute number of items to display
+    display_rows = np.floor(np.sqrt(m))
+    display_cols = np.ceil(m / display_rows)
+
+# Between images padding
+    pad = 1
+
+# Setup blank display
+    display_array = - np.ones((pad + display_rows * (example_height + pad),
+                           pad + display_cols * (example_width + pad)))
+
+# Copy each example into a patch on the display array
+    curr_ex = 0
+    for j in np.arange(display_rows):
+        for i in np.arange(display_cols):
+            if curr_ex > m:
+                break
+            # Get the max value of the patch
+            max_val = np.max(np.abs(X[curr_ex, : ]))
+            rows = [pad + j * (example_height + pad) + x for x in np.arange(example_height+1)]
+            cols = [pad + i * (example_width + pad)  + x for x in np.arange(example_width+1)]
+            display_array[min(rows):max(rows), min(cols):max(cols)] = X[curr_ex, :].reshape(example_height, example_width) / max_val
+            curr_ex = curr_ex + 1
+        if curr_ex > m:
+            break
+
+# Display Image
+    display_array = display_array.astype('float32')
+    plt.imshow(display_array.T)
+    plt.set_cmap('gray')
+# Do not show axis
+    plt.axis('off')
+    show(block= off)
+
+## -- End pasted text --
+
+In [6]: %paste
+## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+import scipy.io
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+
+from oneVsAll import oneVsAll
+from predictOneVsAll import predictOneVsAll
+from displayData import displayData
+
+#  Instructions
+#  ------------
+# 
+#  This file contains code that helps you get started on the
+#  linear exercise. You will need to complete the following functions 
+#  in this exericse:
+#
+#     lrCostFunction.m (logistic regression cost function)
+#     oneVsAll.m
+#     predictOneVsAll.m
+#     predict.m
+#
+#  For this exercise, you will not need to change any code in this file,
+#  or any other files other than those mentioned above.
+#
+
+## Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400  # 20x20 Input Images of Digits
+num_labels = 10          # 10 labels, from 1 to 10
+                         # (note that we have mapped "0" to label 10)
+
+## =========== Part 1: Loading and Visualizing Data =============
+#  We start the exercise by first loading and visualizing the dataset. 
+#  You will be working with a dataset that contains handwritten digits.
+#
+
+# Load Training Data
+print 'Loading and Visualizing Data ...'
+
+data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X, y
+X = data['X']
+y = data['y']
+m, _ = X.shape
+
+# Randomly select 100 data points to display
+rand_indices = np.random.permutation(range(m))
+sel = X[rand_indices[0:100], :]
+
+displayData(sel)
+## -- End pasted text --
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<ipython-input-6-d4e10d847d69> in <module>()
+      5 use('TkAgg')
+      6 
+----> 7 from oneVsAll import oneVsAll
+      8 from predictOneVsAll import predictOneVsAll
+      9 from displayData import displayData
+
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex3/oneVsAll.py in <module>()
+      2 from scipy.optimize import minimize
+      3 
+----> 4 from lrCostFunction import lrCostFunction
+      5 from ex2.gradientFunctionReg import gradientFunctionReg
+      6 
+
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex3/lrCostFunction.py in <module>()
+----> 1 from ex2.costFunctionReg import costFunctionReg
+      2 
+      3 def lrCostFunction(theta, X, y, Lambda):
+      4     """computes the cost of using
+      5     theta as the parameter for regularized logistic regression and the
+
+ImportError: No module named ex2.costFunctionReg
+
+In [7]: exit
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ ipython
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.4.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: %paste
+## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+import scipy.io
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+
+from oneVsAll import oneVsAll
+from predictOneVsAll import predictOneVsAll
+from displayData import displayData
+
+#  Instructions
+#  ------------
+# 
+#  This file contains code that helps you get started on the
+#  linear exercise. You will need to complete the following functions 
+#  in this exericse:
+#
+#     lrCostFunction.m (logistic regression cost function)
+#     oneVsAll.m
+#     predictOneVsAll.m
+#     predict.m
+#
+#  For this exercise, you will not need to change any code in this file,
+#  or any other files other than those mentioned above.
+#
+
+## Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400  # 20x20 Input Images of Digits
+num_labels = 10          # 10 labels, from 1 to 10
+                         # (note that we have mapped "0" to label 10)
+
+## =========== Part 1: Loading and Visualizing Data =============
+#  We start the exercise by first loading and visualizing the dataset. 
+#  You will be working with a dataset that contains handwritten digits.
+#
+
+# Load Training Data
+print 'Loading and Visualizing Data ...'
+
+data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X, y
+X = data['X']
+y = data['y']
+m, _ = X.shape
+
+# Randomly select 100 data points to display
+rand_indices = np.random.permutation(range(m))
+sel = X[rand_indices[0:100], :]
+
+displayData(sel)
+## -- End pasted text --
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<ipython-input-1-d4e10d847d69> in <module>()
+      5 use('TkAgg')
+      6 
+----> 7 from oneVsAll import oneVsAll
+      8 from predictOneVsAll import predictOneVsAll
+      9 from displayData import displayData
+
+ImportError: No module named oneVsAll
+
+In [2]: pwd
+Out[2]: u'/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4'
+
+In [3]: cd ..
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python
+
+In [4]: cd ex3
+/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex3
+
+In [5]: %paste
+## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+import scipy.io
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+
+from oneVsAll import oneVsAll
+from predictOneVsAll import predictOneVsAll
+from displayData import displayData
+
+#  Instructions
+#  ------------
+# 
+#  This file contains code that helps you get started on the
+#  linear exercise. You will need to complete the following functions 
+#  in this exericse:
+#
+#     lrCostFunction.m (logistic regression cost function)
+#     oneVsAll.m
+#     predictOneVsAll.m
+#     predict.m
+#
+#  For this exercise, you will not need to change any code in this file,
+#  or any other files other than those mentioned above.
+#
+
+## Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400  # 20x20 Input Images of Digits
+num_labels = 10          # 10 labels, from 1 to 10
+                         # (note that we have mapped "0" to label 10)
+
+## =========== Part 1: Loading and Visualizing Data =============
+#  We start the exercise by first loading and visualizing the dataset. 
+#  You will be working with a dataset that contains handwritten digits.
+#
+
+# Load Training Data
+print 'Loading and Visualizing Data ...'
+
+data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X, y
+X = data['X']
+y = data['y']
+m, _ = X.shape
+
+# Randomly select 100 data points to display
+rand_indices = np.random.permutation(range(m))
+sel = X[rand_indices[0:100], :]
+
+displayData(sel)
+## -- End pasted text --
+Loading and Visualizing Data ...
+/Library/Python/2.7/site-packages/numpy/core/numeric.py:190: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  a = empty(shape, dtype, order)
+displayData.py:39: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  display_array[min(rows):max(rows), min(cols):max(cols)] = X[curr_ex, :].reshape(example_height, example_width) / max_val
+
+
+In [6]: exit
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ ipython
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.4.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: %paste
+## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+import scipy.io
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+
+from oneVsAll import oneVsAll
+from predictOneVsAll import predictOneVsAll
+from displayData import displayData
+
+#  Instructions
+#  ------------
+# 
+#  This file contains code that helps you get started on the
+#  linear exercise. You will need to complete the following functions 
+#  in this exericse:
+#
+#     lrCostFunction.m (logistic regression cost function)
+#     oneVsAll.m
+#     predictOneVsAll.m
+#     predict.m
+#
+#  For this exercise, you will not need to change any code in this file,
+#  or any other files other than those mentioned above.
+#
+
+## Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400  # 20x20 Input Images of Digits
+num_labels = 10          # 10 labels, from 1 to 10
+                         # (note that we have mapped "0" to label 10)
+
+## =========== Part 1: Loading and Visualizing Data =============
+#  We start the exercise by first loading and visualizing the dataset. 
+#  You will be working with a dataset that contains handwritten digits.
+#
+
+# Load Training Data
+print 'Loading and Visualizing Data ...'
+
+data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X, y
+X = data['X']
+y = data['y']
+m, _ = X.shape
+
+# Randomly select 100 data points to display
+rand_indices = np.random.permutation(range(m))
+sel = X[rand_indices[0:100], :]
+
+displayData(sel)
+## -- End pasted text --
+---------------------------------------------------------------------------
+ImportError                               Traceback (most recent call last)
+<ipython-input-1-d4e10d847d69> in <module>()
+      5 use('TkAgg')
+      6 
+----> 7 from oneVsAll import oneVsAll
+      8 from predictOneVsAll import predictOneVsAll
+      9 from displayData import displayData
+
+ImportError: No module named oneVsAll
+
+In [2]: pwd
+Out[2]: u'/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex4'
+
+In [3]: exit
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ ls
+__init__.py                  ex4weights.mat
+checkNNGradients.py          nnCostFunction.py
+checkNNGradients.pyc         nnCostFunction.pyc
+computeNumericalGradient.py  predict.py
+computeNumericalGradient.pyc predict.pyc
+debugInitializeWeights.py    randInitializeWeights.py
+debugInitializeWeights.pyc   randInitializeWeights.pyc
+displayData.py               sigmoid.py
+displayData.pyc              sigmoid.pyc
+ex4.pdf                      sigmoidGradient.py
+ex4.py                       sigmoidGradient.pyc
+ex4data1.mat                 submit.py
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex4$ cd ..
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python$ cd ex3
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex3$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex3$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex3$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex3$ 
+aerin@Aerins-MacBook-Pro:~/Desktop/Coursera-Stanford-ML-Python/ex3$ ipython
+Python 2.7.10 (default, Feb  7 2017, 00:08:15) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 5.4.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 
+
+In [1]: 
+
+In [1]: 
+
+In [1]: %paste
+## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+import scipy.io
+import numpy as np
+from matplotlib import use
+use('TkAgg')
+
+from oneVsAll import oneVsAll
+from predictOneVsAll import predictOneVsAll
+from displayData import displayData
+
+#  Instructions
+#  ------------
+# 
+#  This file contains code that helps you get started on the
+#  linear exercise. You will need to complete the following functions 
+#  in this exericse:
+#
+#     lrCostFunction.m (logistic regression cost function)
+#     oneVsAll.m
+#     predictOneVsAll.m
+#     predict.m
+#
+#  For this exercise, you will not need to change any code in this file,
+#  or any other files other than those mentioned above.
+#
+
+## Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400  # 20x20 Input Images of Digits
+num_labels = 10          # 10 labels, from 1 to 10
+                         # (note that we have mapped "0" to label 10)
+
+## =========== Part 1: Loading and Visualizing Data =============
+#  We start the exercise by first loading and visualizing the dataset. 
+#  You will be working with a dataset that contains handwritten digits.
+#
+
+# Load Training Data
+print 'Loading and Visualizing Data ...'
+
+data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X, y
+X = data['X']
+y = data['y']
+m, _ = X.shape
+
+# Randomly select 100 data points to display
+rand_indices = np.random.permutation(range(m))
+sel = X[rand_indices[0:100], :]
+
+displayData(sel)
+## -- End pasted text --
+Loading and Visualizing Data ...
+/Library/Python/2.7/site-packages/numpy/core/numeric.py:190: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  a = empty(shape, dtype, order)
+displayData.py:39: VisibleDeprecationWarning: using a non-integer number instead of an integer will result in an error in the future
+  display_array[min(rows):max(rows), min(cols):max(cols)] = X[curr_ex, :].reshape(example_height, example_width) / max_val
+
+
+In [2]: displayData(sel)
+
+
+In [3]: np.array([1,2,3])**2
+Out[3]: array([1, 4, 9])
+
+In [4]: pwd
+Out[4]: u'/Users/aerin/Desktop/Coursera-Stanford-ML-Python/ex3'
+
+In [5]: ## Machine Learning Online Class - Exercise 3 | Part 1: One-vs-all
+   ...: import scipy.io
+   ...: import numpy as np
+   ...: from matplotlib import use
+   ...: use('TkAgg')
+   ...: 
+   ...: from oneVsAll import oneVsAll
+   ...: from predictOneVsAll import predictOneVsAll
+   ...: from displayData import displayData
+   ...: 
+   ...: #  Instructions
+   ...: #  ------------
+   ...: # 
+   ...: #  This file contains code that helps you get started on the
+   ...: #  linear exercise. You will need to complete the following functions 
+   ...: #  in this exericse:
+   ...: #
+   ...: #     lrCostFunction.m (logistic regression cost function)
+   ...: #     oneVsAll.m
+   ...: #     predictOneVsAll.m
+   ...: #     predict.m
+   ...: #
+   ...: #  For this exercise, you will not need to change any code in this file,
+   ...: #  or any other files other than those mentioned above.
+   ...: #
+   ...: 
+   ...: ## Setup the parameters you will use for this part of the exercise
+   ...: input_layer_size  = 400  # 20x20 Input Images of Digits
+   ...: num_labels = 10          # 10 labels, from 1 to 10
+   ...:                          # (note that we have mapped "0" to label 10)
+   ...: 
+   ...: ## =========== Part 1: Loading and Visualizing Data =============
+   ...: #  We start the exercise by first loading and visualizing the dataset. 
+   ...: #  You will be working with a dataset that contains handwritten digits.
+   ...: #
+   ...: 
+   ...: # Load Training Data
+   ...: print 'Loading and Visualizing Data ...'
+   ...: 
+   ...: data = scipy.io.loadmat('ex3data1.mat') # training data stored in arrays X
+   ...: , y
+   ...: X = data['X']
+   ...: y = data['y']
+   ...: m, _ = X.shape
+   ...: 
+Loading and Visualizing Data ...
+
+In [6]: X
+Out[6]: 
+array([[ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       ..., 
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.]])
+
+In [7]: np.sum(X)
+Out[7]: 262678.26015968173
+
+In [8]: 
+   ...: m, _ = X.shape
+
+In [9]: 
+
+In [9]: m
+Out[9]: 5000
+
+In [10]: _
+Out[10]: 5000
+
+In [11]: X.shape
+Out[11]: (5000, 400)
+
+In [12]: _
+Out[12]: (5000, 400)
+
+In [13]:  m, _ = X.shape
+
+In [14]: _
+Out[14]: 400
+
+In [15]: num_labels
+Out[15]: 10
+
+In [16]: Lambda
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-16-d32bc43259c9> in <module>()
+----> 1 Lambda
+
+NameError: name 'Lambda' is not defined
+
+In [17]: Lambda = 0.1
+
+In [18]: 
+
+In [18]: 
+
+In [18]: 
+    ...:     m, n = X.shape
+    ...: 
+  File "<ipython-input-18-d96f90a4b6ea>", line 2
+    m, n = X.shape
+    ^
+IndentationError: unexpected indent
+
+
+In [19]: 
+    ...:     m, n = X.shape
+    ...: 
+  File "<ipython-input-19-d96f90a4b6ea>", line 2
+    m, n = X.shape
+    ^
+IndentationError: unexpected indent
+
+
+In [20]: m, n = X.shape
+    ...: 
+
+In [21]: m
+Out[21]: 5000
+
+In [22]: n
+Out[22]: 400
+
+In [23]:     all_theta = np.zeros((num_labels, n + 1))
+
+In [24]: all_theta.shape
+Out[24]: (10, 401)
+
+In [25]: X
+Out[25]: 
+array([[ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       ..., 
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.],
+       [ 0.,  0.,  0., ...,  0.,  0.,  0.]])
+
+In [26]: X.shpae
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-26-5d7bc2bc7bac> in <module>()
+----> 1 X.shpae
+
+AttributeError: 'numpy.ndarray' object has no attribute 'shpae'
+
+In [27]: X.shape
