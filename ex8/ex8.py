@@ -50,9 +50,8 @@ plt.plot(X[:, 0], X[:, 1], 'bx')
 plt.axis([0, 30, 0, 30])
 plt.xlabel('Latency (ms)')
 plt.ylabel('Throughput (mb/s)')
-show()
+plt.show(block=False)
 raw_input("Program paused. Press Enter to continue...")  
-
 
 ## ================== Part 2: Estimate the dataset statistics ===================
 #  For this exercise, we assume a Gaussian distribution for the dataset.
@@ -61,7 +60,7 @@ raw_input("Program paused. Press Enter to continue...")
 #  then compute the probabilities for each of the points and then visualize 
 #  both the overall distribution and where each of the points falls in 
 #  terms of that distribution.
-#
+
 print 'Visualizing Gaussian fit.'
 
 #  Estimate my and sigma2
@@ -75,7 +74,7 @@ p = multivariateGaussian(X, mu, sigma2)
 visualizeFit(X,  mu, sigma2)
 plt.xlabel('Latency (ms)')
 plt.ylabel('Throughput (mb/s)')
-show()
+plt.show(block=False)
 
 raw_input("Program paused. Press Enter to continue...")  
 
