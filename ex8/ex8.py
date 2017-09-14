@@ -66,8 +66,7 @@ print 'Visualizing Gaussian fit.'
 #  Estimate my and sigma2
 mu, sigma2 = estimateGaussian(X)
 
-#  Returns the density of the multivariate normal at each data point (row) 
-#  of X
+#  Returns the density of the multivariate normal at each data point (row) of X
 p = multivariateGaussian(X, mu, sigma2)
 
 #  Visualize the fit

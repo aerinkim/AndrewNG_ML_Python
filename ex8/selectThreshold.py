@@ -1,11 +1,13 @@
 import numpy as np
 import math
+from sklearn.metrics import f1_score
 
-def selectThreshold(yval, pval):
+
+def selectThreshold(y_true, pval):
     """
     finds the best
     threshold to use for selecting outliers based on the results from a
-    validation set (pval) and the ground truth (yval).
+    validation set (pval) and the ground truth (y_true).
     """
 
     bestEpsilon = 0
@@ -24,8 +26,9 @@ def selectThreshold(yval, pval):
         # Note: You can use predictions = (pval < epsilon) to get a binary vector
         #       of 0's and 1's of the outlier predictions
 
+        y_pred = (pval < epsilon) 
 
-        # =============================================================
+        F1=f1_score(y_true, y_pred)
 
         if F1 > bestF1:
            bestF1 = F1
