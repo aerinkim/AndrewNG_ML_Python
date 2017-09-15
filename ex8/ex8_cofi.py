@@ -49,10 +49,10 @@ print 'Average rating for movie 1 (Toy Story): %f / 5' % np.mean(Y[0, R[0, :]])
 #  We can "visualize" the ratings matrix by plotting it with imagesc
 
 plt.figure()
-plt.imshow(Y, aspect='equal', origin='upper', extent=(0, Y.shape[1], 0, Y.shape[0]/2.0))
+plt.matshow(Y)
 plt.ylabel('Movies')
 plt.xlabel('Users')
-show()
+plt.show(block=False)
 
 raw_input("Program paused. Press Enter to continue...")
 
@@ -92,7 +92,7 @@ raw_input("Program paused. Press Enter to continue...")
 #  Once your cost function matches up with ours, you should now implement 
 #  the collaborative filtering gradient function. Specifically, you should 
 #  complete the code in cofiCostFunc.m to return the grad argument.
-#  
+
 print 'Checking Gradients (without regularization) ...'
 
 #  Check gradients by running checkNNGradients
@@ -105,7 +105,6 @@ raw_input("Program paused. Press Enter to continue...")
 #  Now, you should implement regularization for the cost function for 
 #  collaborative filtering. You can implement it by adding the cost of
 #  regularization to the original cost computation.
-#  
 
 #  Evaluate cost function
 J, grad = cofiCostFunc(np.hstack((X.T.flatten(), Theta.T.flatten())), Y, R, num_users, num_movies,
@@ -119,9 +118,7 @@ raw_input("Program paused. Press Enter to continue...")
 ## ======= Part 5: Collaborative Filtering Gradient Regularization ======
 #  Once your cost matches up with ours, you should proceed to implement 
 #  regularization for the gradient. 
-#
 
-#  
 print 'Checking Gradients (with regularization) ...'
 
 #  Check gradients by running checkNNGradients
@@ -150,15 +147,14 @@ my_ratings[97] = 2
 
 # We have selected a few movies we liked / did not like and the ratings we
 # gave are as follows:
-my_ratings[6] = 3
-my_ratings[11] = 5
-my_ratings[53] = 4
-my_ratings[63] = 5
-my_ratings[65] = 3
+my_ratings[55] = 5
 my_ratings[68] = 5
-my_ratings[182] = 4
-my_ratings[225] = 5
-my_ratings[354] = 5
+my_ratings[70] = 5
+my_ratings[81] = 2
+my_ratings[142] = 4
+my_ratings[175] = 1
+my_ratings[203] = 4
+my_ratings[254] = 3
 
 print 'New user ratings:'
 for i in range(len(my_ratings)):
@@ -171,7 +167,7 @@ raw_input("Program paused. Press Enter to continue...")
 ## ================== Part 7: Learning Movie Ratings ====================
 #  Now, you will train the collaborative filtering model on a movie rating 
 #  dataset of 1682 movies and 943 users
-#
+
 
 print '\nTraining collaborative filtering...'
 
@@ -180,11 +176,8 @@ data = scipy.io.loadmat('ex8_movies.mat')
 Y = data['Y']
 R = data['R'].astype(bool)
 
-#  Y is a 1682x943 matrix, containing ratings (1-5) of 1682 movies by 
-#  943 users
-#
-#  R is a 1682x943 matrix, where R(i,j) = 1 if and only if user j gave a
-#  rating to movie i
+#  Y is a 1682x943 matrix, containing ratings (1-5) of 1682 movies by 943 users
+#  R is a 1682x943 matrix, where R(i,j) = 1 if and only if user j gave a rating to movie i
 
 #  Add our own ratings to the data matrix
 Y = np.column_stack((my_ratings, Y))
@@ -194,7 +187,7 @@ R = np.column_stack((my_ratings, R)).astype(bool)
 Ynorm, Ymean = normalizeRatings(Y, R)
 
 #  Useful Values
-num_users = Y.shape[1]
+num_users = Y.shape[1] # not it's 944.
 num_movies = Y.shape[0]
 num_features = 10
 
