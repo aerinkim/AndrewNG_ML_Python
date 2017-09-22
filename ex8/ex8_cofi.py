@@ -215,10 +215,10 @@ print 'Recommender system learning completed.'
 
 raw_input("Program paused. Press Enter to continue...")  
 
+
 ## ================== Part 8: Recommendation for you ====================
 #  After training the model, you can now make recommendations by computing
 #  the predictions matrix.
-#
 
 p = X.dot(Theta.T)
 my_predictions = p[:, 0] + Ymean
