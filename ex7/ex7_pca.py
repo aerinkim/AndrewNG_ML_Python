@@ -122,7 +122,7 @@ plt.show(block=False)
 
 K = 1
 Z = projectData(X_norm, U, K)
-print 'Projection of the first example: %f', Z[0]  # What is zero cordinate here? is it the 2-d that we used to know?
+print 'Projection of the first example: %f', Z[0]  
 print '(this value should be about 1.481274)'
 
 X_rec  = recoverData(Z, U, K)
